@@ -1,0 +1,44 @@
+html, body {
+	font-family: Roboto;
+	background-color: #111;
+	color: #ccc;
+	box-sizing: border-box;
+	/* transition: .5s all linear; */
+}
+
+#wrapper {
+	padding: 20px;
+	animation: show .5s linear forwards;
+	position: relative;
+}
+
+#subtitle {
+	animation: show .5s linear forwards;
+	animation-delay: 1s;
+	position: relative;
+	opacity: 0;
+}
+
+#projects {
+	animation: show .5s linear forwards;
+	animation-delay: 2s;
+	position: relative;
+	opacity: 0;
+}
+
+.emph {
+	color: #888;
+	font-weight: bold;
+}
+
+@keyframes show {
+	0% {
+		opacity: 0;
+		top: 10px;
+	}
+
+	100% {
+		opacity: 1;
+		top: 0;
+	}
+}
