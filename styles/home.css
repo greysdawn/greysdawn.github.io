@@ -1,0 +1,22 @@
+.proj {
+	height: 200px;
+	width: 200px;
+	background-color: #555;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.proj p {
+	margin: 0;
+	padding: 0;
+}
+
+.proj-title {
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.proj-sub {
+	font-size: 1.1rem;
+	font-weight: bold;
+}

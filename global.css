@@ -3,7 +3,8 @@ html, body {
 	background-color: #111;
 	color: #ccc;
 	box-sizing: border-box;
-	/* transition: .5s all linear; */
+	margin: 0;
+	padding: 0;
 }
 
 #wrapper {
@@ -29,6 +30,20 @@ html, body {
 .emph {
 	color: #888;
 	font-weight: bold;
+}
+
+header {
+	height: 5vh;
+	line-height: 5vh;
+	background-color: #333;
+	margin: 0;
+}
+
+header .home {
+	font-weight: bold;
+	color: #ccc;
+	text-decoration: none;
+	margin-left: 5px;
 }
 
 @keyframes show {
