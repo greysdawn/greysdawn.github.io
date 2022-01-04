@@ -9,22 +9,30 @@ html, body {
 
 #wrapper {
 	padding: 20px;
-	animation: show .5s linear forwards;
+	margin: 0;
+}
+
+#title, #subtitle, #projects, .cv {
+	animation: show .25s linear forwards;
 	position: relative;
+	opacity: 0;
+}
+
+# title {
+	margin-top: 0;
+	padding-top: 0;
 }
 
 #subtitle {
-	animation: show .5s linear forwards;
-	animation-delay: 1s;
-	position: relative;
-	opacity: 0;
+	animation-delay: .1s;
+}
+
+.cv {
+	animation-delay: .2s;
 }
 
 #projects {
-	animation: show .5s linear forwards;
-	animation-delay: 2s;
-	position: relative;
-	opacity: 0;
+	animation-delay: .3s;
 }
 
 .emph {
@@ -49,7 +57,7 @@ header .home {
 @keyframes show {
 	0% {
 		opacity: 0;
-		top: 10px;
+		top: 20px;
 	}
 
 	100% {
