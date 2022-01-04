@@ -43,3 +43,11 @@
 .proj-links {
 	margin-top: 5px;
 }
+
+@media min-width(500px) {
+	#proj-wrapper {
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-start;
+	}
+}
