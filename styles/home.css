@@ -4,7 +4,7 @@
 	align-items: center;
 	max-width: 100%;
 	overflow-x: auto;
-	padding: 5px;
+	/*padding: 5px;*/
 }
 
 .proj {
@@ -44,10 +44,14 @@
 	margin-top: 5px;
 }
 
-@media min-width(500px) {
+@media(min-width: 745px) {
 	#proj-wrapper {
 		flex-direction: row;
 		flex-wrap: wrap;
 		align-items: flex-start;
+	}
+
+	.proj {
+		margin-right: 10px;
 	}
 }

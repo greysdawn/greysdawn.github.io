@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 html, body {
-	font-family: Roboto;
+	font-family: 'Roboto', sans-serif;
 	background-color: #111;
 	color: #ccc;
 	box-sizing: border-box;
@@ -18,7 +20,7 @@ html, body {
 	opacity: 0;
 }
 
-# title {
+#title {
 	margin-top: 0;
 	padding-top: 0;
 }
@@ -48,10 +50,15 @@ header {
 }
 
 header .home {
+	font-size: 1.2em;
 	font-weight: bold;
 	color: #ccc;
 	text-decoration: none;
 	margin-left: 5px;
+}
+
+header a:hover {
+	text-decoration: underline;
 }
 
 @keyframes show {
@@ -63,5 +70,12 @@ header .home {
 	100% {
 		opacity: 1;
 		top: 0;
+	}
+}
+
+@media(min-width: 1200px) {
+	#wrapper {
+		width: 60%;
+		margin: auto;
 	}
 }
