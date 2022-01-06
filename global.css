@@ -1,29 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 html, body {
-	font-family: Roboto;
+	font-family: 'Roboto', sans-serif;
 	background-color: #111;
 	color: #ccc;
 	box-sizing: border-box;
-	/* transition: .5s all linear; */
+	margin: 0;
+	padding: 0;
 }
 
 #wrapper {
 	padding: 20px;
-	animation: show .5s linear forwards;
+	margin: 0;
+}
+
+#title, #subtitle, #projects, .cv {
+	animation: show .25s linear forwards;
 	position: relative;
+	opacity: 0;
+}
+
+#title {
+	margin-top: 0;
+	padding-top: 0;
 }
 
 #subtitle {
-	animation: show .5s linear forwards;
-	animation-delay: 1s;
-	position: relative;
-	opacity: 0;
+	animation-delay: .1s;
+}
+
+.cv {
+	animation-delay: .2s;
 }
 
 #projects {
-	animation: show .5s linear forwards;
-	animation-delay: 2s;
-	position: relative;
-	opacity: 0;
+	animation-delay: .3s;
 }
 
 .emph {
@@ -31,14 +42,40 @@ html, body {
 	font-weight: bold;
 }
 
+header {
+	height: 5vh;
+	line-height: 5vh;
+	background-color: #333;
+	margin: 0;
+}
+
+header .home {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #ccc;
+	text-decoration: none;
+	margin-left: 5px;
+}
+
+header a:hover {
+	text-decoration: underline;
+}
+
 @keyframes show {
 	0% {
 		opacity: 0;
-		top: 10px;
+		top: 20px;
 	}
 
 	100% {
 		opacity: 1;
 		top: 0;
+	}
+}
+
+@media(min-width: 1200px) {
+	#wrapper {
+		width: 60%;
+		margin: auto;
 	}
 }
